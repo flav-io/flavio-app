@@ -25321,7 +25321,7 @@ module.exports = Array.isArray || function (arr) {
         font-weight:normal;
       }
     </style>
-    <iron-ajax auto="" url="http://flavio.pythonanywhere.com/obslist" handle-as="json" on-response="handleResponse" last-response="{{obslist}}"></iron-ajax>
+    <iron-ajax auto="" url="https://flavio.pythonanywhere.com/obslist" handle-as="json" on-response="handleResponse" last-response="{{obslist}}"></iron-ajax>
 
     <vaadin-combo-box label="Select observable" items="{{obslist.obslist}}" class="combo-box" on-value-changed="valueChange"></vaadin-combo-box>
 
@@ -25367,7 +25367,7 @@ module.exports = Array.isArray || function (arr) {
       }
     </style>
 
-    <iron-ajax url="http://flavio.pythonanywhere.com/observable" handle-as="json" last-response="{{obs_details}}" on-response="handleResponse" id="ajax"></iron-ajax>
+    <iron-ajax url="https://flavio.pythonanywhere.com/observable" handle-as="json" last-response="{{obs_details}}" on-response="handleResponse" id="ajax"></iron-ajax>
     <div id="obsdetails" style="display:none;">
       <h2 id="obstex"></h2>
       <p id="obsdescription"></p>
@@ -25436,7 +25436,7 @@ module.exports = Array.isArray || function (arr) {
     <paper-button-spinner raised="" on-tap="computeu" id="buttonerr" style="background:var(--primary-color);">compute central + uncertainty</paper-button-spinner>
     </div>
 
-    <iron-ajax url="http://flavio.pythonanywhere.com/prediction" handle-as="json" last-response="{{obsprediction}}" on-response="handleResponse" on-error="handleError" id="ajax"></iron-ajax>
+    <iron-ajax url="https://flavio.pythonanywhere.com/prediction" handle-as="json" last-response="{{obsprediction}}" on-response="handleResponse" on-error="handleError" id="ajax"></iron-ajax>
 
     <p id="obsprediction" style="font-size:2em;"></p>
 
